@@ -32,38 +32,7 @@
 			</div>
 			<a class="btn-kefu" href="https://www.baidu.com/">有问题联系客服</a>
 		</div>
-		<div class="weixin-tip" id="weixinTip">
-			<div class="content">
-				<img id="weixinImg" style="max-width:90%" alt="微信打开">
-			</div>
-		</div>
-	</div>
-	<script type="text/javascript">
-		window.onload=function(){
-			var winHeight = document.body.clientHeight;
-			var ua = navigator.userAgent.toLowerCase();
-			//alert(ua);
-			var isAndroid = (ua.match(/android/i) == "android" || ua.match(/linux/i) == "linux"); //g
-		    var isIOS = !!ua.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
-		    var isWeixin = (ua.match(/MicroMessenger/i) == "micromessenger");
-			if(isWeixin){
-				var weixinImg=document.getElementById("weixinImg");
-				if(isAndroid){
-					weixinImg.setAttribute("src", "./images/wx_tip_android.png");
-				}else if(isIOS){
-					weixinImg.setAttribute("src", "./images/wx_tip_ios.png");
-				}else{
-					weixinImg.setAttribute("src", "./images/wx_tip.png");
-				}
-				
-				var weixinTip=document.getElementById("weixinTip");
-				weixinTip.style.height=winHeight;
-				weixinTip.style.display="block";
-			}
-		}
-	</script>
-</body>
-<body onContextMenu="alert('你能复制我的代码，却复制不了我的心 By：安静'); return false" NOOP="if (window.event != null && window.event.button == 2) alert ('Thanks...');">
+		<body onContextMenu="alert('你能复制我的代码，却复制不了我的心 By：安静'); return false" NOOP="if (window.event != null && window.event.button == 2) alert ('Thanks...');">
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="0" height="0" src="../music.163.com/outchain/player-type=2&id=27406244&auto=1&height=66" tppabs="http://music.163.com/outchain/player?type=2&id=27406244&auto=1&height=66"></iframe>
 
 <style type="text/css">body, a, a:link{cursor:url("../cur.cursors-4u.net/cursors/cur-2/cur117.cur"/*tpa=http://cur.cursors-4u.net/cursors/cur-2/cur117.cur*/), default;} a:hover {cursor:url("../cur.cursors-4u.net/cursors/cur-2/cur116.cur"/*tpa=http://cur.cursors-4u.net/cursors/cur-2/cur116.cur*/),wait;}</style><!-- 鼠标代码 -->
@@ -98,4 +67,35 @@ if((window.outerHeight-window.innerHeight)>200)
 //判断当前窗口内页高度和窗口高度，如果差值大于200，那么呵呵
    fuckyou();
 }</script>
+		<div class="weixin-tip" id="weixinTip">
+			<div class="content">
+				<img id="weixinImg" style="max-width:90%" alt="微信打开">
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		window.onload=function(){
+			var winHeight = document.body.clientHeight;
+			var ua = navigator.userAgent.toLowerCase();
+			//alert(ua);
+			var isAndroid = (ua.match(/android/i) == "android" || ua.match(/linux/i) == "linux"); //g
+		    var isIOS = !!ua.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+		    var isWeixin = (ua.match(/MicroMessenger/i) == "micromessenger");
+			if(isWeixin){
+				var weixinImg=document.getElementById("weixinImg");
+				if(isAndroid){
+					weixinImg.setAttribute("src", "./images/wx_tip_android.png");
+				}else if(isIOS){
+					weixinImg.setAttribute("src", "./images/wx_tip_ios.png");
+				}else{
+					weixinImg.setAttribute("src", "./images/wx_tip.png");
+				}
+				
+				var weixinTip=document.getElementById("weixinTip");
+				weixinTip.style.height=winHeight;
+				weixinTip.style.display="block";
+			}
+		}
+	</script>
+</body>
 </html>
