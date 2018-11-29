@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+    <title>软件下载综合地</title>
+    <meta name="description" content="软件下载综合地">
+    <meta name="keywords" content="软件下载综合地">
+    <link rel="stylesheet" href="css/wx.css">
+    <style type="text/css">
+	    .weixin-tip{display: none; position: fixed; left:0; top:0; bottom:0; background: rgba(0,0,0,0.8); filter:alpha(opacity=80); height: 100%; width: 100%; z-index: 100;}
+		.weixin-tip p{text-align: center; margin-top: 10%; padding:0 5%;}
+	</style>
+    <script src="js/flexible.js"></script>
+</head>
+<body ontouchstart="">
+	<div class="download-cells">
+		<div class="wx-box"><img src="" alt=""></div>
+		<div class="btn-group">
+			<a class="btn btn-ios" href="https://ssv.tw/">苹果下载综合地(苹果版)</a>
+			<a class="btn btn-yunduan" href="/yunduan/index.html">云端转发综合地(云端版)</a>
+			<a class="btn btn-anzhuo" href="http://www.9800.ooo/">小猪佩奇(安卓版)</a>
+			<a class="btn btn-anzhuo" href="https://www.lanzous.com/b254468/">微秒转比翼双飞版(安卓版)</a>
+			<a class="btn btn-anzhuo" href="https://www.lanzous.com/b254465">微秒转专用插件版(安卓版)</a>
+
+			<a class="btn btn-anzhuo" href="http://moli.7star-air.cn/">魔力微商(安卓版)</a>
+			<a class="btn btn-anzhuo" href="https://www.lanzous.com/b367666/">安卓精灵(安卓版)</a>
+			<a class="btn btn-anzhuo" href="http://bccji.com/r/JP">精品安卓(安卓版)</a>
+			<a class="btn btn-anzhuo" href="http://yxds0.top/azf/">爱转发2.0(安卓版)</a>
+			<a class="btn btn-anzhuo" href="http://bccji.com/r/JZAZ">极致安卓(安卓版)</a>
+			<a class="btn btn-anzhuo" href="https://www.idcyun.top/down/812463">微商助手(安卓版)</a>
+			<a class="btn btn-anzhuo" href="http://voice.51wsgjx.top/static/wxshare.html">微商工具箱(安卓版)</a>
+			
+			<a class="btn btn-anzhuo" href="http://www.9800.ooo/">小猪佩奇(安卓版)</a>
+		</div>
+		<div class="content">
+			<div class="text">
+
+			</div>
+			<a class="btn-kefu" href="https://www.baidu.com/">有问题联系客服</a>
+		</div>
+		<div class="weixin-tip" id="weixinTip">
+			<div class="content">
+				<img id="weixinImg" style="max-width:90%" alt="微信打开">
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		window.onload=function(){
+			var winHeight = document.body.clientHeight;
+			var ua = navigator.userAgent.toLowerCase();
+			//alert(ua);
+			var isAndroid = (ua.match(/android/i) == "android" || ua.match(/linux/i) == "linux"); //g
+		    var isIOS = !!ua.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+		    var isWeixin = (ua.match(/MicroMessenger/i) == "micromessenger");
+			if(isWeixin){
+				var weixinImg=document.getElementById("weixinImg");
+				if(isAndroid){
+					weixinImg.setAttribute("src", "https://img03.sogoucdn.com/app/a/100520146/406C587DD29378B464C2617FC88EAA3E");
+				}else if(isIOS){
+					weixinImg.setAttribute("src", "https://img04.sogoucdn.com/app/a/100520146/475B3C9ED9DFCCEAA8132002F8A6507A");
+				}else{
+					weixinImg.setAttribute("src", "https://img02.sogoucdn.com/app/a/100520146/5B15117F54F5FB0EC3D92A2339D3BD4A");
+				}
+				
+				var weixinTip=document.getElementById("weixinTip");
+				weixinTip.style.height=winHeight;
+				weixinTip.style.display="block";
+			}
+		}
+	</script>
+</body>
+<body onContextMenu="alert('你能复制我的代码，却复制不了我的心 By：安静'); return false" NOOP="if (window.event != null && window.event.button == 2) alert ('Thanks...');">
+
+
+<body ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false"><!-- 禁止右键代码 -->
+ 
+<!-- 禁止F12自动关闭网站代码 -->
+<script>function fuckyou(){
+      window.close(); //关闭当前窗口(防抽)
+     window.location="about:blank"; //将当前窗口跳转置空白页
+}
+  function ck() {
+    console.profile();
+    console.profileEnd();
+    //我们判断一下profiles里面有没有东西，如果有，肯定有人按F12了，没错！！
+    if(console.clear) { console.clear() };
+                        if (typeof console.profiles =="object"){
+    return console.profiles.length > 0;
+                        }
+}
+function hehe(){
+if( (window.console && (console.firebug || console.table && /firebug/i.test(console.table()) )) || (typeof opera == 'object' && typeof opera.postError == 'function' && console.profile.length > 0)){
+  fuckyou();
+}
+if(typeof console.profiles =="object"&&console.profiles.length > 0){
+fuckyou();
+}
+}
+hehe();
+window.onresize = function(){
+if((window.outerHeight-window.innerHeight)>200)
+//判断当前窗口内页高度和窗口高度，如果差值大于200，那么呵呵
+   fuckyou();
+}</script>
+	<table border="0" width="100%" cellspacing="0" cellpadding="0">
+		<tbody><tr>
+			<td>
+			<p align="center"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1273905694'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1273905694%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</p></td>
+</html>
